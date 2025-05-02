@@ -485,7 +485,7 @@ with st.sidebar:
             "stage": stage
         })
 
-st.title("🧑‍💻Technical Interview AI Agents🤖")
+st.title("🧑‍💻Technical Interview AIAgents🤖")
 st.caption("🚀 AI-Powered Interview Trainer: Your Smart Hiring Assistant 🤖")
 
 if st.session_state.skill != "Select" or st.session_state.stage == 'aptitude':
