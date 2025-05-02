@@ -16,13 +16,13 @@ import pygame  # Add this import
 # Initialize pygame mixer for sound playback
 pygame.mixer.init()
 
-# Function to play sound
-def play_sound(file_path):
-    try:
-        pygame.mixer.music.load(file_path)
-        pygame.mixer.music.play()
-    except Exception as e:
-        st.error(f"Error playing sound: {e}")
+import pygame
+
+def play_audio(file_path):
+    pygame.mixer.init()
+    pygame.mixer.music.load(file_path)
+    pygame.mixer.music.play()
+
 
 # Load environment variables
 load_dotenv()
@@ -673,10 +673,7 @@ if st.session_state["timer_running"]:
     if st.session_state["timer"] > 0:
         st.session_state["timer"] -= elapsed_time  # Decrement the timer
         st.session_state["timer"] = max(0, st.session_state["timer"])  # Ensure timer doesn't go below 0
-
-# Play sound alert when 10 seconds are left
-if int(st.session_state["timer"]) == 10:
-    play_sound('alert.mp3')  # Ensure you have an `alert.mp3` file in your project directory
+        
 
 # Display the countdown timer with a progress bar
 total_time = 60  # Total time for the timer
