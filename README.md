@@ -271,6 +271,70 @@ http://localhost:8501
 👨‍💻 Developed by: **Abhishek Kumar**
 📫 Reach me on [LinkedIn](https://www.linkedin.com/in/abhishek-yadav-70a69829a/) | 🌐 [Portfolio](https://www.datascienceportfol.io/abhiydv23096)
 
+
+# 🎉 Let's automate the certificate process and make your events shine! 🎉
+
+
+## ❤️ **Made with Passion by Abhishek Yadav & Open-Source Contributors!** 🚀✨
+
+
+<h1 align="center">© LICENSE <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Symbols/Check%20Box%20With%20Check.webp" alt="Check Box With Check" width="25" height="25" /></h1>
+
+<table align="center">
+  <tr>
+     <td>
+       <p align="center"> <img src="https://github.com/malivinayak/malivinayak/blob/main/LICENSE-Logo/MIT.png?raw=true" width="80%"></img>
+    </td>
+    <td> 
+      <img src="https://img.shields.io/badge/License-MIT-yellow.svg"/> <br> 
+This project is licensed under <a href="./LICENSE">MIT</a>. <img width=2300/>
+    </td>
+  </tr>
+</table>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
+
+
+
+
+ <hr>
+
+<div align="center">
+<a href="#"><img src="assets/githubgif.gif" width="150"></a>
+	
+### **Thanks for checking out my GitHub Profile!**  
+
+ ## 💌 Sponser
+
+  [![BuyMeACoffee](https://img.buymeacoffee.com/button-api/?text=Buymeacoffee&emoji=&slug=codingstella&button_colour=FFDD00&font_colour=000000&font_family=Comic&outline_colour=000000&coffee_colour=ffffff)](https://www.buymeacoffee.com/abhishekkumar62000)
+
+## 👨‍💻 Developer Information
+**Created by **Abhishek kumar** 
+**📧 Email**: [abhiydv23096@gmail.com](mailto:abhiydv23096@gmail.com)  
+**🔗 LinkedIn**: [Abhishek Kumar](https://www.linkedin.com/in/abhishek-kumar-70a69829a/)  
+**🐙 GitHub Profile**: [@abhishekkumar62000](https://github.com/abhishekkumar62000)  
+**📸 Developer Profile Image**:- <h2>📸 Developer Profile Image</h2>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/57bebc2e-722d-4016-83b2-8b9c6dc33cd5" width="400" height="400" style="border-radius: 100%; object-fit: cover;" alt="Developer Photo">
+</p>
+
+
+</div>  
+
+
+`Don't forget to give A star to this repository ⭐`
+
+
+`👍🏻 All Set! 💌`
+
+</div>
+
+
+
+---
+
+
 Feel free to fork, star ⭐ this repo, and contribute with ideas, bug reports, or feature requests!
 Let’s make technical interview preparation smarter, together. 🙌
 
