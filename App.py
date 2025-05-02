@@ -211,7 +211,7 @@ try:
 except FileNotFoundError:
     st.sidebar.warning("image.png file not found. Please check the file path.")
 
-st.sidebar.markdown("👨👨‍💻 **Developer:** Abhishek 💖 Yadav")
+st.sidebar.markdown("👨👨‍💻**Developer:** Abhishek💖Yadav")
 
 developer_path = "pic.jpg"  # Ensure this file is in the same directory as your script
 try:
@@ -485,7 +485,7 @@ with st.sidebar:
             "stage": stage
         })
 
-st.title("🧑‍💻 Technical Interview AI Agents🤖")
+st.title("🧑‍💻Technical Interview AI Agents🤖")
 st.caption("🚀 AI-Powered Interview Trainer: Your Smart Hiring Assistant 🤖")
 
 if st.session_state.skill != "Select" or st.session_state.stage == 'aptitude':
