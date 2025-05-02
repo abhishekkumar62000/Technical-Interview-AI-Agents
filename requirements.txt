@@ -4,6 +4,5 @@ python-dotenv
 langchain-core
 langchain
 spacy
-playsound
 pygame
 plotly
