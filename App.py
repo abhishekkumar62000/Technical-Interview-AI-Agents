@@ -9,7 +9,6 @@ import base64
 import time
 import json
 import random
-from playsound import playsound  # type: ignore # Add this import
 import plotly.express as px  # Add this import
 import pygame  # Add this import
 
