@@ -12,17 +12,6 @@ import random
 import plotly.express as px  # Add this import
 import pygame  # Add this import
 
-# Initialize pygame mixer for sound playback
-pygame.mixer.init()
-
-import pygame
-
-def play_audio(file_path):
-    pygame.mixer.init()
-    pygame.mixer.music.load(file_path)
-    pygame.mixer.music.play()
-
-
 # Load environment variables
 load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
