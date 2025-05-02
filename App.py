@@ -555,7 +555,8 @@ if st.session_state.skill != "Select" or st.session_state.stage == 'aptitude':
                 st.session_state.rubric_totals[st.session_state["current_index"]] = evaluation["total_score"]
                 st.session_state.binary_scores[st.session_state["current_index"]] = evaluation["binary_score"]
                 st.session_state.ready_next = True
-                st.experimental_rerun()
+                st.rerun()
+
 
     # Show Hint button
     if st.button("Show Hint"):
