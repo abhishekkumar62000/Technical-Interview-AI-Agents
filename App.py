@@ -677,7 +677,8 @@ if remaining_time <= 0:
     if st.session_state["current_index"] < st.session_state["num_questions"] - 1:
         st.session_state["current_index"] += 1  # Move to the next question
         st.session_state["timer"] = 60  # Reset the timer for the next question
-        st.experimental_rerun()  # Rerun the app to load the next question
+        st.rerun()
+  # Rerun the app to load the next question
     else:
         st.success("🎉 Interview Complete!")
 
