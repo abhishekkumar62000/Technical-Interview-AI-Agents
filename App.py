@@ -12,9 +12,8 @@ import random
 import plotly.express as px  # Add this import
 import pygame  # Add this import
 
-# Load environment variables
-load_dotenv()
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+# On Streamlit Cloud
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 
 # Model configurations
 MODEL_CONFIG = {
