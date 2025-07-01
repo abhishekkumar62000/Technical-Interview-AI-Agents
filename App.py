@@ -489,6 +489,10 @@ st.title("🧑‍💻Technical Interview AIAgents🤖")
 st.caption("🚀 AI-Powered Interview Trainer: Your Smart Hiring Assistant 🤖")
 
 if st.session_state.skill != "Select" or st.session_state.stage == 'aptitude':
+
+    # default difficulty in case it's the first question
+    difficulty = "Medium"
+
     col1, col2 = st.columns([4, 1])
     with col1:
         st.subheader(f"Question {st.session_state.current_index + 1} of {st.session_state.num_questions}")
@@ -496,11 +500,11 @@ if st.session_state.skill != "Select" or st.session_state.stage == 'aptitude':
         st.caption(f"Model: {st.session_state.selected_model.split('-')[0]}")
 
     # Adjust question difficulty based on performance
-    if st.session_state["current_index"] > 0:  # Ensure it's not the first question
+    if st.session_state["current_index"] > 0:
         last_score = st.session_state.binary_scores[st.session_state["current_index"] - 1]
-        if last_score == 1:  # If the last question was passed
+        if last_score == 1:
             difficulty = "Hard" if difficulty == "Medium" else "Medium"
-        else:  # If the last question was failed
+        else:
             difficulty = "Easy" if difficulty == "Medium" else "Medium"
 
     # Question generation
@@ -512,32 +516,32 @@ if st.session_state.skill != "Select" or st.session_state.stage == 'aptitude':
                 st.session_state.selected_model,
                 st.session_state.questions,
                 st.session_state.stage,
-                difficulty  # Pass the updated difficulty here
+                difficulty
             )
             st.session_state.questions.append(new_q)
 
-    # Navigation buttons for Previous and Next Questions
-    col1, col2, col3 = st.columns([1, 2, 1])  # Adjust column widths for better alignment
+    # Navigation columns
+    col1, col2, col3 = st.columns([1, 2, 1])
 
     with col1:
-        if st.session_state["current_index"] > 0:  # Enable "Previous" only if not on the first question
+        if st.session_state["current_index"] > 0:
             if st.button("⬅️ Previous Question"):
                 st.session_state["current_index"] -= 1
                 st.session_state.ready_next = False
-                st.rerun()
+                st.rerun()  # updated to st.rerun
 
     with col3:
-        if st.session_state["current_index"] < st.session_state.num_questions - 1:  # Enable "Next" only if not on the last question
+        if st.session_state["current_index"] < st.session_state.num_questions - 1:
             if st.button("➡️ Next Question"):
                 st.session_state["current_index"] += 1
                 st.session_state.ready_next = False
-                st.rerun()
+                st.rerun()  # updated to st.rerun
 
-    # Display the current question
+    # Display current question
     current_q = st.session_state.questions[st.session_state["current_index"]]
     st.markdown(f"<h3 style='font-size: 24px;'>{current_q}</h3>", unsafe_allow_html=True)
 
-    # Answer input area
+    # Answer input
     answer = st.text_area(
         "Your Answer:",
         value=st.session_state.answers[st.session_state["current_index"]],
@@ -545,7 +549,7 @@ if st.session_state.skill != "Select" or st.session_state.stage == 'aptitude':
         key=f"ans_{st.session_state['current_index']}"
     )
 
-    # Submit Answer button
+    # Submit button
     if not st.session_state.ready_next:
         if st.button("Submit Answer"):
             if answer.strip():
@@ -555,7 +559,7 @@ if st.session_state.skill != "Select" or st.session_state.stage == 'aptitude':
                 st.session_state.rubric_totals[st.session_state["current_index"]] = evaluation["total_score"]
                 st.session_state.binary_scores[st.session_state["current_index"]] = evaluation["binary_score"]
                 st.session_state.ready_next = True
-                st.rerun()
+                st.rerun()  # updated to st.rerun
 
 
     # Show Hint button
