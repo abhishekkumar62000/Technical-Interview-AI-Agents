@@ -524,14 +524,14 @@ if st.session_state.skill != "Select" or st.session_state.stage == 'aptitude':
             if st.button("⬅️ Previous Question"):
                 st.session_state["current_index"] -= 1
                 st.session_state.ready_next = False
-                st.experimental_rerun()
+                st.rerun()
 
     with col3:
         if st.session_state["current_index"] < st.session_state.num_questions - 1:  # Enable "Next" only if not on the last question
             if st.button("➡️ Next Question"):
                 st.session_state["current_index"] += 1
                 st.session_state.ready_next = False
-                st.experimental_rerun()
+                st.rerun()
 
     # Display the current question
     current_q = st.session_state.questions[st.session_state["current_index"]]
